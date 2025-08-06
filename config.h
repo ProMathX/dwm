@@ -17,7 +17,7 @@ static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows sel
 static const unsigned int systrayonleft = 0;    /* 0: systray in the right corner, >0: systray on left of status text */
 static const unsigned int systrayspacing = 2;   /* systray spacing */
 static 			 int smartgaps				  = 0;
-static const int swallowfloating    = 0;
+static const int swallowfloating    = 1;
 static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
@@ -37,7 +37,7 @@ static char *colors[][3] = {
 };		      ;
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "www", "dev", "dev-term", "term", "dox", "mux", "mail", "virt", "pass" };
 
 static const Rule rules[] = {
 /* xprop(1):
